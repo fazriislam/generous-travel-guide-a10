@@ -1,11 +1,16 @@
 import React from 'react';
 import Banner from './Banner/Banner';
 
-const Home = () => {
+const Home = (props) => {
+    console.log(props.tour);
     return (
         <div>
-            <h2>Home</h2>
+            <div>
             <Banner/>
+            </div>
+            <div>
+
+            </div>
         </div>
     );
 };

@@ -1,9 +1,14 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+
+
 
 const Tours = () => {
+  
+
     return (
         <div>
             <h2>Tours</h2>
+
         </div>
     );
 };
