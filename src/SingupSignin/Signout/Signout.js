@@ -1,9 +1,15 @@
 import React from 'react';
+import { signOut } from "firebase/auth";
+import auth from '../../firebase.init';
+import { Button } from 'react-bootstrap';
 
 const Signout = () => {
+    const handleSignOut=e=>{
+        signOut(auth);
+    }
     return (
         <div>
-            <h2>Signout</h2>
+            <Button onClick={handleSignOut}>Sign out</Button>
         </div>
     );
 };
