@@ -4,7 +4,7 @@ import auth from '../../firebase.init';
 import { Button } from 'react-bootstrap';
 
 const Signout = () => {
-    const handleSignOut=e=>{
+    const handleSignOut=()=>{
         signOut(auth);
     }
     return (

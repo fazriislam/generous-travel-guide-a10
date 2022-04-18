@@ -31,10 +31,11 @@ const Signin = () => {
     //     signInWithGoogle();
     // }
 
-    const handleSubmit = e => {
+    const handleSubmit = async e => {
         e.preventDefault();
 
-        signInWithEmailAndPassword(email, password);
+        await signInWithEmailAndPassword(auth, user, email, password);
+        console.log(user, email, password);
         navigate('/home');
     }
 

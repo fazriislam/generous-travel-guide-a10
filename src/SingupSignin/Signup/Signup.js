@@ -31,11 +31,11 @@ const Signup = () => {
 
     const handleNameBlur = e => {
         setName(e.target.value);
-        console.log(name);
+        // console.log(name);
     }
 
-    const handleEmailBlur = e => {
-        setEmail(e.target.value);
+    const handleEmailBlur = async e => {
+        await setEmail(e.target.value);
     }
 
     const handlePAsswordBlur = e => {
@@ -50,6 +50,7 @@ const Signup = () => {
         signInWithPopup(auth, googleProvider)
             .then(result => {
                 const user = result.user;
+                console.log(user);
             })
             .catch(error => {
                 const errorMessage = error.message;
@@ -58,12 +59,16 @@ const Signup = () => {
             navigate('/home')
     }
 
-    const handleSubmit = e => {
+    const handleSubmit = async e => {
         e.preventDefault();
 
-        createUserWithEmailAndPassword(email, password);
-        updateProfile({ name: name });
-        navigate('/home')
+        // const email = e.target.email.value;
+        // const password = e.target.password.value;
+        
+        await createUserWithEmailAndPassword(auth, email, password);
+        console.log(user, email, password);
+        await updateProfile({ name: name });
+        navigate('/home');
     }
 
 
@@ -81,7 +86,7 @@ const Signup = () => {
 
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>Email</Form.Label>
-                    <Form.Control onBlur={handleEmailBlur} type="email" placeholder="Enter email" />
+                    <Form.Control onBlur={handleEmailBlur} type="email" name="email" placeholder="Enter email" />
                 </Form.Group>
 
                 <Form.Group className="mb-3" controlId="formBasicPassword">
