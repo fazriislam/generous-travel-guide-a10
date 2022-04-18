@@ -40,10 +40,11 @@ const Signin = () => {
     }
 
     return (
-        <div className='w-50 mt-5 mx-auto'>
-            <Form onSubmit={handleSubmit} className='border p-3'>
+        <div className='w-50 my-5 mx-auto'>
+            <h2 className='text-center text-primary mb-2'>Sign in</h2>
+            <Form onSubmit={handleSubmit} className='border p-5'>
 
-                <Form.Group className="mb-3" controlId="formBasicEmail">
+                <Form.Group className="mb-5" controlId="formBasicEmail">
                     <Form.Label>Email</Form.Label>
                     <Form.Control onBlur={handleEmailBlur} type="email" placeholder="Enter email" />
                 </Form.Group>
@@ -53,15 +54,12 @@ const Signin = () => {
                     <Form.Control onBlur={handlePasswordBlur} type="password" placeholder="Password" />
                 </Form.Group>
 
-                <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                    <Form.Check type="checkbox" label="Check me out" />
-                </Form.Group>
                 <Button onClick={handleSubmit} variant="primary" type="submit">
                     Sign in
                 </Button>
             </Form>
             <hr />
-            <div className='mt-2 text-center'>
+            <div className='mt-5 text-center'>
                 <Button onClick={() => signInWithGoogle()}>Sign in with Google</Button>
             </div>
         </div>

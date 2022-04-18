@@ -13,7 +13,7 @@ const Signup = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [confirmPassword, setConfirmPassword] = useState('');
-    // const [error, setError] = useState([]);
+
 
     const [
         createUserWithEmailAndPassword,
@@ -31,7 +31,6 @@ const Signup = () => {
 
     const handleNameBlur = e => {
         setName(e.target.value);
-        // console.log(name);
     }
 
     const handleEmailBlur = async e => {
@@ -61,12 +60,8 @@ const Signup = () => {
 
     const handleSubmit = async e => {
         e.preventDefault();
-
-        // const email = e.target.email.value;
-        // const password = e.target.password.value;
         
         await createUserWithEmailAndPassword(auth, email, password);
-        console.log(user, email, password);
         await updateProfile({ name: name });
         navigate('/home');
     }
@@ -77,7 +72,7 @@ const Signup = () => {
 
     return (
         <div className='w-50 mt-5 mx-auto'>
-            <h2 className='text-center text-primary'>Generous Travel Guide</h2>
+            <h2 className='text-center text-primary mb-2'>Sign up</h2>
             <Form onSubmit={handleSubmit} className='border p-3'>
                 <Form.Group className="mb-3">
                     <Form.Label>Name</Form.Label>
@@ -107,7 +102,7 @@ const Signup = () => {
                 </Button>
             </Form>
             <hr />
-            <div className='mt-2 text-center'>
+            <div className='my-5 text-center'>
                 <Button onClick={handelGoogleSignUp}>Sign up with Google</Button>
             </div>
         </div >

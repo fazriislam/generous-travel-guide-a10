@@ -1,65 +1,65 @@
 [
-    {
-      "id": "DE1",
-      "place": 0,
-      "img": "http://placehold.it/32x32",
-      "cost": 38,
-      "attractions": "Sit aute deserunt adipisicing aute fugiat ullamco nulla commodo nisi excepteur velit cupidatat. Qui in duis dolor deserunt et qui exercitation sit duis ullamco sunt exercitation. Nulla eu ullamco elit qui voluptate est cupidatat non eiusmod cupidatat ad. Pariatur dolore dolore commodo eiusmod qui ea dolore consequat occaecat irure laboris. Anim veniam laboris sit irure ullamco nulla. Eu reprehenderit amet est cupidatat nulla ullamco labore enim commodo fugiat.\r\n"
-    },
-    {
-      "id": "DE2",
-      "place": 1,
-      "img": "http://placehold.it/32x32",
-      "cost": 31,
-      "attractions": "Minim in mollit adipisicing excepteur occaecat do incididunt nulla eu laboris commodo veniam laboris. Nulla ad amet nulla cupidatat non. Consectetur pariatur nostrud fugiat do Lorem proident sunt excepteur tempor veniam occaecat.\r\n"
-    },
-    {
-      "id": "DE3",
-      "place": 2,
-      "img": "http://placehold.it/32x32",
-      "cost": 26,
-      "attractions": "Aute dolore elit eu dolore sint excepteur sunt labore adipisicing. Elit deserunt labore voluptate nulla dolor fugiat consequat aliquip. Consequat labore laboris minim Lorem. Aute ipsum et dolor amet id deserunt ipsum nulla nulla nulla laborum ipsum nulla do. Fugiat consequat est aliquip ea est amet eiusmod ut ad labore. Pariatur adipisicing ex anim sit sit do ea. Ut cillum esse ut voluptate id non quis aliqua.\r\n"
-    },
-    {
-      "id": "DE4",
-      "place": 3,
-      "img": "http://placehold.it/32x32",
-      "cost": 39,
-      "attractions": "Lorem culpa elit aliquip non id est ad consectetur excepteur quis. Laboris eiusmod magna mollit deserunt magna. Sunt nulla deserunt excepteur fugiat elit consequat irure. Quis irure ut commodo pariatur est voluptate cupidatat cillum laboris cupidatat qui. Irure non officia quis nulla ex magna ex adipisicing incididunt nisi laborum Lorem enim.\r\n"
-    },
-    {
-      "id": "DE5",
-      "place": 4,
-      "img": "http://placehold.it/32x32",
-      "cost": 22,
-      "attractions": "Quis id id ea irure ea magna reprehenderit voluptate. Ullamco ex laboris consequat incididunt laboris exercitation nostrud elit. Tempor sint fugiat enim officia adipisicing.\r\n"
-    },
-    {
-      "id": "DE6",
-      "place": 5,
-      "img": "http://placehold.it/32x32",
-      "cost": 27,
-      "attractions": "Consequat laboris tempor ut id minim deserunt incididunt voluptate laboris labore. Consequat minim tempor amet do non labore. Ut consectetur anim nulla magna voluptate quis elit incididunt laborum. Veniam cillum labore exercitation esse nostrud proident culpa mollit quis aute dolore anim in. Aute occaecat nisi cillum fugiat anim.\r\n"
-    },
-    {
-      "id": "DE7",
-      "place": 6,
-      "img": "http://placehold.it/32x32",
-      "cost": 29,
-      "attractions": "Duis esse officia consequat ipsum cillum magna commodo ut ad exercitation consequat adipisicing. Non laborum elit nostrud est dolore. Ex anim est ea pariatur nulla. Tempor mollit laborum Lorem pariatur eu officia duis voluptate exercitation sit officia elit.\r\n"
-    },
-    {
-      "id": "DE8",
-      "place": 7,
-      "img": "http://placehold.it/32x32",
-      "cost": 40,
-      "attractions": "Enim fugiat reprehenderit et velit dolor sit reprehenderit anim occaecat sunt. Consectetur fugiat qui velit enim sint sunt ullamco. Amet ut fugiat voluptate sunt in ad reprehenderit esse minim. Tempor duis in Lorem culpa est deserunt Lorem sit consectetur quis occaecat excepteur sit in.\r\n"
-    },
-    {
-      "id": "DE9",
-      "place": 8,
-      "img": "http://placehold.it/32x32",
-      "cost": 30,
-      "attractions": "Fugiat mollit proident et esse cupidatat fugiat exercitation occaecat aute ipsum. Ipsum est cupidatat tempor sint commodo cupidatat labore ipsum id cupidatat in id do. Magna laboris fugiat eu elit qui Lorem reprehenderit id ad consectetur officia irure. Reprehenderit laboris irure magna fugiat amet ut consectetur. Non nulla magna enim voluptate voluptate esse nisi laborum. Irure ipsum ea consectetur amet incididunt adipisicing. Fugiat laborum qui velit consectetur elit do.\r\n"
-    }
-  ]
+  {
+    "id": "DE1",
+    "place": "Rio de Janeiro, Brazil",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/9/98/Cidade_Maravilhosa.jpg",
+    "cost": 2100,
+    "details": "Rio de Janeiro is a huge seaside city in Brazil, famed for its Copacabana and Ipanema beaches, 38m Christ the Redeemer statue atop Mount Corcovado and for Sugarloaf Mountain, a granite peak with cable cars to its summit. The city is also known for its sprawling favelas (shanty towns)."
+  },
+  {
+    "id": "DE2",
+    "place": "Matterhorn, Switzerland",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Matterhorn_from_Domh%C3%BCtte_-_2.jpg/1200px-Matterhorn_from_Domh%C3%BCtte_-_2.jpg",
+    "cost": 3500,
+    "details": "The Matterhorn is a mountain of the Alps, straddling the main watershed and border between Switzerland and Italy. It is a large, near-symmetric pyramidal peak in the extended Monte Rosa area of the Pennine Alps, whose summit is 4,478 metres high, making it one of the highest summits in the Alps and Europe."
+  },
+  {
+    "id": "DE3",
+    "place": "The Great Pyramid of Giza, Egypt",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Kheops-Pyramid.jpg",
+    "cost": 2800,
+    "details": "The Great Pyramid of Giza is the oldest and largest of the pyramids in the Giza pyramid complex bordering present-day Giza in Greater Cairo, Egypt. It is the oldest of the Seven Wonders of the Ancient World, and the only one to remain largely intact."
+  },
+  {
+    "id": "DE4",
+    "place": "Hervey Bay,  Australia",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRijP4ZSxIR1p_XmOJ-UY6DDBWy8Z4GahgHLg&usqp=CAU",
+    "cost": 3000,
+    "details": "Hervey Bay, a coastal city in southern Queensland, is widely known as a site for observing humpback whales. Whale-watching boats operate during the July to November migration season. It's also a hub for tours to nearby Fraser Island, which has beaches and features a rainforest habitat for dingoes and other wildlife. A waterfront esplanade links the city's marina with beaches offering calm waters for swimming"
+  },
+  {
+    "id": "DE5",
+    "place": "Taj Mahal, India",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Taj_Mahal%2C_Agra%2C_India_edit3.jpg",
+    "cost": 1800,
+    "details": "The Taj Mahal, is an ivory-white marble mausoleum on the right bank of the river Yamuna in the Indian city of Agra. It was commissioned in 1632 by the Mughal emperor Shah Jahan to house the tomb of his favourite wife, Mumtaz Mahal; it also houses the tomb of Shah Jahan himself."
+  },
+  {
+    "id": "DE6",
+    "place": "Eiffel Tower, France",
+    "img": "https://cdn.britannica.com/54/75854-050-E27E66C0/Eiffel-Tower-Paris.jpg",
+    "cost": 3800,
+    "details": "The Eiffel Tower is a wrought-iron lattice tower on the Champ de Mars in Paris, France. It is named after the engineer Gustave Eiffel, whose company designed and built the tower.It rests on a base that is 5 metres (17 feet) high, and a television antenna atop the tower gives it a total elevation of 324 metres (1,063 feet)."
+  },
+  {
+    "id": "DE7",
+    "place": "Stonehenge, England",
+    "img": "https://static.dw.com/image/54689649_303.jpg",
+    "cost": 3300,
+    "details": "Stonehenge is a prehistoric monument on Salisbury Plain in Wiltshire, England, two miles west of Amesbury. It consists of an outer ring of vertical sarsen standing stones, each around 13 feet high, seven feet wide, and weighing around 25 tons, topped by connecting horizontal lintel stones. "
+  },
+  {
+    "id": "DE8",
+    "place": "Statue of Liberty, New York",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhxzeKT-PS1yZ7FCFBtgqIFtYRvNzgT5SEFA&usqp=CAU",
+    "cost": 4200,
+    "details": "The Statue of Liberty is a colossal neoclassical sculpture on Liberty Island in New York Harbor in New York City, in the United States."
+  },
+  {
+    "id": "DE9",
+    "place": "Bangkok, Bangkok",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRU5DPvu61XXEd-THdAIWe-xn-oSWrt9DZsng&usqp=CAU",
+    "cost": 3100,
+    "details": "Bangkok, Thailands capital, is a large city known for ornate shrines and vibrant street life. The boat-filled Chao Phraya River feeds its network of canals, flowing past the Rattanakosin royal district, home to opulent Grand Palace and its sacred Wat Phra Kaew Temple."
+  }
+]

@@ -12,7 +12,7 @@ const Tours = () => {
         .then(res=>res.json())
         .then(data=>setTours(data));
     },[]);
-    console.log(tours);
+
     return (
         <div className='tours-container'>
             <h2>Tours: {tours.length}</h2>

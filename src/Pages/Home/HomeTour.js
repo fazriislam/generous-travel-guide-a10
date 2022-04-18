@@ -1,8 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { Button, Card } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 
-const Tour = ({ tour }) => {
+
+const HomeTour = ({ tour }) => {
     const navigate = useNavigate();
 
     const { place, cost, details, img } = tour;
@@ -10,16 +11,14 @@ const Tour = ({ tour }) => {
     return (
         <div>
             <Card style={{ width: '18rem' }}>
-                <Card.Img className='w-100' variant="top" src={img} />
+                <Card.Img variant="top" src={img} />
                 <Card.Body>
                     <Card.Title>Place: {place}</Card.Title>
-                    <Card.Text>{details}</Card.Text>
-                    <p>Cost: ${cost}</p>
-                    <Button onClick={() => navigate('/booking')} variant="primary">Book Now</Button>
+                    <Button onClick={() => navigate('/tours')} variant="primary">For More</Button>
                 </Card.Body>
             </Card>
         </div>
     );
 };
 
-export default Tour;
+export default HomeTour;
