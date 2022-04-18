@@ -6,12 +6,13 @@ import { useUpdateProfile } from 'react-firebase-hooks/auth';
 import { useSendEmailVerification } from 'react-firebase-hooks/auth';
 import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 import auth from '../../firebase.init';
+import { useNavigate } from 'react-router-dom';
 
 const Signup = () => {
-    const [name, setName] = useState([]);
-    const [email, setEmail] = useState([]);
-    const [password, setPassword] = useState([]);
-    const [confirmPassword, setConfirmPassword] = useState([]);
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+    const [confirmPassword, setConfirmPassword] = useState('');
     // const [error, setError] = useState([]);
 
     const [
@@ -22,6 +23,7 @@ const Signup = () => {
     ] = useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
     const [updateProfile, updating, profileError] = useUpdateProfile(auth);
     const [sendEmailVerification, sending, verificationError] = useSendEmailVerification(auth);
+    const navigate = useNavigate();
     const googleProvider = new GoogleAuthProvider();
 
 
@@ -53,6 +55,7 @@ const Signup = () => {
                 const errorMessage = error.message;
                 const emailError = error.email;
             })
+            navigate('/home')
     }
 
     const handleSubmit = e => {
@@ -60,6 +63,7 @@ const Signup = () => {
 
         createUserWithEmailAndPassword(email, password);
         updateProfile({ name: name });
+        navigate('/home')
     }
 
 
@@ -76,7 +80,7 @@ const Signup = () => {
                 </Form.Group>
 
                 <Form.Group className="mb-3" controlId="formBasicEmail">
-                    <Form.Label>Email address</Form.Label>
+                    <Form.Label>Email</Form.Label>
                     <Form.Control onBlur={handleEmailBlur} type="email" placeholder="Enter email" />
                 </Form.Group>
 
