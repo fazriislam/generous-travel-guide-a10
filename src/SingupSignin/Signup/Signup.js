@@ -4,6 +4,7 @@ import { Button, Form } from 'react-bootstrap';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { useUpdateProfile } from 'react-firebase-hooks/auth';
 import { useSendEmailVerification } from 'react-firebase-hooks/auth';
+import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 import auth from '../../firebase.init';
 
 const Signup = () => {
@@ -21,6 +22,7 @@ const Signup = () => {
     ] = useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
     const [updateProfile, updating, profileError] = useUpdateProfile(auth);
     const [sendEmailVerification, sending, verificationError] = useSendEmailVerification(auth);
+    const googleProvider = new GoogleAuthProvider();
 
 
     // --------------------------------Event Functions
@@ -42,12 +44,25 @@ const Signup = () => {
         setConfirmPassword(e.target.value);
     }
 
+    const handelGoogleSignUp = e => {
+        signInWithPopup(auth, googleProvider)
+            .then(result => {
+                const user = result.user;
+            })
+            .catch(error => {
+                const errorMessage = error.message;
+                const emailError = error.email;
+            })
+    }
+
     const handleSubmit = e => {
         e.preventDefault();
 
         createUserWithEmailAndPassword(email, password);
         updateProfile({ name: name });
     }
+
+
 
 
 
@@ -82,6 +97,10 @@ const Signup = () => {
                     Sign up
                 </Button>
             </Form>
+            <hr />
+            <div className='mt-2 text-center'>
+                <Button onClick={handelGoogleSignUp}>Sign up with Google</Button>
+            </div>
         </div >
     );
 };
